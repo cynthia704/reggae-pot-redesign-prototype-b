@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reggae Pot Jamaican Grill | Jamaican Restaurant in Centennial &amp; Denver, CO</title>
+<meta name="description" content="Authentic Jamaican food in Centennial and Denver, Colorado. Oxtail, curry goat and jerk chicken cooked by Tamara Nisbeth of Montego Bay. Order online for pickup and delivery.">
+
+<!--
+  REDESIGN PROTOTYPE B — Reggae Pot Jamaican Grill homepage, alternate direction
+  Built Sep 17, 2026 as a second option alongside 06-Redesign-Prototype ("Prototype A"),
+  so the client has two genuinely different designs to choose between, not two versions
+  of the same one. Same real assets, same real copy, same conversion fixes from the
+  Sep 3 audit (broken hero, buried order CTA, no menu content) — different visual system:
+
+  - Gold header (matches the live site's actual nav bar color; A used cream)
+  - Split-panel hero (gold text panel + photo panel side by side; A used a full-bleed
+    photo with centered text over a dark scrim)
+  - Menu and Locations moved up right after the hero (the Sep 3 audit calls the menu
+    the highest-intent content); A kept the original section order
+  - Red as the primary CTA color (a real brand hue A leaves as a small accent only);
+    gold reserved for secondary highlights and the Why/Tamara section
+  - Story sections use a stacked photo-on-top/text-below layout; A uses side-by-side
+  - Ends on a solid ink-black band; A ends on a gold gradient with a photo card
+
+  See README.md in this folder for the full comparison table against Prototype A.
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/site-b.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site">
+  <div class="wrap nav">
+    <a href="#top" class="wordmark">
+      <img class="mark" src="assets/icon.png" alt="" width="186" height="119">
+      <img class="logotype" src="assets/logo-txt.png" alt="Reggae Pot" width="473" height="66">
+    </a>
+    <ul class="nav-links">
+      <li><a href="/menu/">Menu</a></li>
+      <li><a href="#locations">Locations</a></li>
+      <li><a href="https://catering.reggaepotjamaicangrill.com/">Catering</a></li>
+      <li><a href="#why">About</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-outline btn-sm" href="/order/centennial/">Order: Centennial</a>
+      <a class="btn btn-primary btn-sm" href="/order/denver/">Order: Denver</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO — split panel: gold text block + full-bleed photo/video, side by side.
+       Fixes the same #1 audit finding as Prototype A (broken hero, buried CTA) with a
+       completely different mechanic: no scrim needed since the text never sits on top
+       of the photo. -->
+  <section class="hero" id="top">
+    <div class="hero-panel">
+      <span class="eyebrow">Colorado&rsquo;s Favorite Jamaican Restaurant</span>
+      <h1>Real Jamaican food, cooked like <em>home</em>.</h1>
+      <p class="lede">Oxtail, curry goat and jerk chicken off the grill, seasoned with scotch bonnet peppers and fiery jerk spices, in portions big enough that most people take half of it home.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/order/centennial/">Order Online: Centennial</a>
+        <a class="btn btn-outline" href="/order/denver/">Order Online: Denver</a>
+      </div>
+      <ul class="hero-benefits">
+        <li>Skip the line</li>
+        <li>No wait</li>
+        <li>More convenient than calling</li>
+      </ul>
+    </div>
+    <div class="hero-media">
+      <video autoplay muted loop playsinline poster="assets/hero.jpg" aria-hidden="true">
+        <source src="assets/hero-video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <!-- QUICK-FACTS STRIP — unique to this version, gives immediate wayfinding energy
+       right under the hero instead of relying on the header nav alone. -->
+  <div class="quickstrip">
+    <div class="wrap">
+      <span>Centennial &amp; Denver, CO</span>
+      <span>Order ahead, skip the line</span>
+      <span>Fresh-pressed juices daily</span>
+    </div>
+  </div>
+
+  <!-- SIGNATURE DISHES — moved up right after the hero (the Sep 3 audit calls the menu
+       the highest-intent content on the site); Prototype A keeps it further down. -->
+  <section class="dishes" id="dishes">
+    <div class="wrap">
+      <div class="dishes-head reveal">
+        <div>
+          <span class="eyebrow">Start here</span>
+          <h2>The dishes people come back for</h2>
+          <p style="max-width:60ch; opacity:0.8;">New to Jamaican food? Start with the jerk chicken. Here&rsquo;s what everything else is. We also serve curry chicken, vegan dishes and fresh-pressed juices. Ask what's available today.</p>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:stretch; gap:10px;">
+          <div class="cta-row" style="justify-content:flex-end;">
+            <a class="btn btn-primary btn-sm" href="/order/centennial/">Order Online: Centennial</a>
+            <a class="btn btn-outline btn-sm" href="/order/denver/">Order Online: Denver</a>
+          </div>
+          <a class="btn btn-outline btn-sm" href="/menu/" style="justify-content:center;">View the full menu ▸</a>
+        </div>
+      </div>
+      <div class="dish-grid">
+        <article class="dish-card reveal">
+          <div class="dish-photo" style="background-image:url('assets/oxtail.png');">
+            <span class="dish-ribbon">Bestseller</span>
+          </div>
+          <div class="dish-body">
+            <h3>Oxtail</h3>
+            <p>Slow-braised until it falls off the bone, in a rich brown gravy. The dish regulars order first.</p>
+          </div>
+        </article>
+        <article class="dish-card reveal">
+          <div class="dish-photo" style="background-image:url('assets/jerk-ribs.jpg');"></div>
+          <div class="dish-body">
+            <h3>Jerk BBQ Ribs</h3>
+            <p>Ribs finished jerk-style with a BBQ glaze, fall-off-the-bone tender.</p>
+          </div>
+        </article>
+        <article class="dish-card reveal">
+          <div class="dish-photo" style="background-image:url('assets/jerk-chicken.png');"></div>
+          <div class="dish-body">
+            <h3>Jerk Chicken</h3>
+            <p>Off the grill, seasoned with scotch bonnet peppers and fiery jerk spices. The easiest place to start.</p>
+          </div>
+        </article>
+        <article class="dish-card reveal">
+          <div class="dish-photo" style="background-image:url('assets/ackee-saltfish.jpg');"></div>
+          <div class="dish-body">
+            <h3>Ackee &amp; Salt Fish</h3>
+            <p>Jamaica&rsquo;s national dish. A strong signal for anyone who grew up on the real thing.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATIONS — also moved up, right after Dishes, instead of near the bottom. -->
+  <section class="locations-b" id="locations">
+    <div class="wrap">
+      <span class="eyebrow">Visit us</span>
+      <h2>South Denver metro. Worth the drive.</h2>
+      <p style="max-width:60ch; opacity:0.8;">Dine in for the reggae music and the full spread, or order ahead and skip straight to eating.</p>
+      <div class="loc-grid">
+        <div class="loc-card reveal">
+          <span class="loc-badge">Centennial</span>
+          <h3>Centennial</h3>
+          <ul class="loc-facts">
+            <li><strong>Address</strong> 7562 S University Blvd Unit C, Centennial, CO 80122</li>
+            <li><strong>Phone</strong> <a href="tel:+13039975623">303-997-5623</a></li>
+            <li><strong>Hours</strong> Mon–Thu 11am–8pm</li>
+            <li><strong></strong> Fri–Sat 11am–9pm</li>
+            <li><strong></strong> Sunday 11pm–7pm</li>
+          </ul>
+          <a class="btn btn-primary" href="/order/centennial/">Order Online: Centennial</a>
+        </div>
+        <div class="loc-card reveal">
+          <span class="loc-badge">Denver</span>
+          <h3>Denver</h3>
+          <ul class="loc-facts">
+            <li><strong>Address</strong> 2243 S Monaco St Pkwy #104, Denver, CO 80222</li>
+            <li><strong>Phone</strong> <a href="tel:+17204102956">720-410-2956</a></li>
+            <li><strong>Hours</strong> Mon–Thu 11am–8pm</li>
+            <li><strong></strong> Fri–Sat 11am–9pm</li>
+            <li><strong></strong> Sunday Closed</li>
+          </ul>
+          <a class="btn btn-primary" href="/order/denver/">Order Online: Denver</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOD VIBES — live site's own copy block, word-for-word, in this version's
+       stacked photo-on-top / text-below layout instead of Prototype A's side-by-side. -->
+  <section class="content-stack tint">
+    <div class="wrap reveal">
+      <div class="stack-media" style="background-image:url('assets/reggae-pot-photo.jpg');"></div>
+      <div class="stack-copy">
+        <span class="eyebrow" style="color:var(--red)">Good Vibes</span>
+        <h2>Reggae Pot</h2>
+        <p>When you walk into Reggae Pot Jamaican Grill, you&rsquo;re greeted by pleasant, friendly and cool-as-can-be staff, in a vibrant, colorful and laid-back chill atmosphere. It&rsquo;s a family-friendly vibe, with a live reggae concert always on the television and reggae music pumping through the speakers.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-sm" href="/order/centennial/">Order Online: Centennial</a>
+          <a class="btn btn-outline btn-sm" href="/order/denver/">Order Online: Denver</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US — live site's own copy block, its own section. -->
+  <section class="content-stack">
+    <div class="wrap reveal">
+      <div class="stack-media" style="background-image:url('assets/jerk-wings.jpg');"></div>
+      <div class="stack-copy">
+        <span class="eyebrow" style="color:var(--red)">Great Food</span>
+        <h2>Jamaican Grill</h2>
+        <p>Drawing from the diverse Jamaican cuisine, our menu offers island specialties like jerk chicken, escoveitch fish, oxtail, curried goat and curry chicken, seasoned with scotch bonnet peppers and fiery jerk spices. We offer an assortment of vegan dishes, including our famous, fresh homemade juices.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-sm" href="/order/centennial/">Order Online: Centennial</a>
+          <a class="btn btn-outline btn-sm" href="/order/denver/">Order Online: Denver</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLAVORS OF JAMAICA — live site's own copy block, its own section.
+       Same PLACEHOLDER note as Prototype A: "breakfast" dropped since 11am-8pm hours
+       don't support that claim. Punctuation matches the live site exactly. -->
+  <section class="content-stack tint">
+    <div class="wrap reveal">
+      <div class="stack-media" style="background-image:url('assets/hero.jpg'); background-position:center 30%;"></div>
+      <div class="stack-copy">
+        <span class="eyebrow" style="color:var(--red)">Authentic &amp; Delicious</span>
+        <h2>Flavors of Jamaica in the Heart of Colorado</h2>
+        <p>Visit Reggae Pot Jamaican Grill for a culinary getaway to the island of Jamaica, right in the heart of Colorado. Considered one of Colorado&rsquo;s best Jamaican restaurants, Reggae Pot is a local favorite for lunch and dinner. Join us, stay a while, and enjoy a comforting meal, a tasty snack or one of our refreshing homemade juices. Or, order for takeout and enjoy the flavors of Jamaica at home, school, work, or wherever you choose.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-sm" href="/order/centennial/">Order Online: Centennial</a>
+          <a class="btn btn-outline btn-sm" href="/order/denver/">Order Online: Denver</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY REGGAE POT — gold background, circular portrait, traits as a horizontal
+       row instead of Prototype A's two-column layout with a vertical trait list. -->
+  <section class="why" id="why">
+    <div class="wrap reveal">
+      <span class="eyebrow">The real thing</span>
+      <div class="why-portrait-round" style="background-image:url('assets/tamara.jpg');"></div>
+      <h2>Tamara Nisbeth learned to cook in Montego Bay. She cooks the same way here.</h2>
+      <p>Not the trendiest. Not the cheapest. Not the most convenient. Reggae Pot is the one a Jamaican customer will vouch for, and a first-timer will remember for the sheer amount of food.</p>
+      <div class="trait-row">
+        <div class="trait-item">
+          <span class="mark">G</span>
+          <h3>Generous</h3>
+          <p>Nobody finishes a plate on the first try. That is on purpose.</p>
+        </div>
+        <div class="trait-item">
+          <span class="mark">R</span>
+          <h3>Rooted</h3>
+          <p>Escoveitch, not "fried fish." Rice and peas, not "rice and beans."</p>
+        </div>
+        <div class="trait-item">
+          <span class="mark">E</span>
+          <h3>Easy</h3>
+          <p>Order ahead. Skip the line. Ready when you get here.</p>
+        </div>
+        <div class="trait-item">
+          <span class="mark">L</span>
+          <h3>Lively</h3>
+          <p>Reggae music, a game always on, a warm, family-friendly room.</p>
+        </div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-sm" href="/order/centennial/">Order Online: Centennial</a>
+        <a class="btn btn-outline btn-sm" href="/order/denver/">Order Online: Denver</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JAMAICAN SPECIALTIES — live site's own copy block, its own section. -->
+  <section class="content-stack">
+    <div class="wrap reveal">
+      <div class="stack-media" style="background-image:url('assets/ackee-saltfish.jpg');"></div>
+      <div class="stack-copy">
+        <span class="eyebrow" style="color:var(--red)">Delicious</span>
+        <h2>Jamaican Specialties</h2>
+        <p>At Reggae Pot Jamaican Grill, you can enjoy traditional dishes such as Ackee and Salt Fish, Stewed Oxtails and Curry Chicken. Prepared with only the freshest ingredients and seasoned to perfection, our authentic Jamaican dishes make a satisfying meal any time of day.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-sm" href="/order/centennial/">Order Online: Centennial</a>
+          <a class="btn btn-outline btn-sm" href="/order/denver/">Order Online: Denver</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS / CATERING -->
+  <section class="reviews-b">
+    <div class="wrap">
+      <span class="eyebrow">What people say</span>
+      <h2>Best in Denver, no exaggeration needed</h2>
+      <div class="cta-row" style="margin-bottom:0.5em;">
+        <a class="btn btn-primary btn-sm" href="/order/centennial/">Order Online: Centennial</a>
+        <a class="btn btn-outline btn-sm" href="/order/denver/">Order Online: Denver</a>
+      </div>
+      <div class="review-grid">
+        <div class="review-card reveal">
+          <p>&ldquo;Totally worth the drive.&rdquo;</p>
+          <cite>Reggae Pot customer review <!-- VERIFY: name + platform --></cite>
+        </div>
+        <div class="review-card reveal">
+          <p>&ldquo;Ever since I moved to Denver, I haven&rsquo;t been able to find great Jamaican food, until now.&rdquo;</p>
+          <cite>Reggae Pot customer review <!-- VERIFY: name + platform --></cite>
+        </div>
+        <div class="review-card reveal">
+          <p>&ldquo;The portions are amazing.&rdquo;</p>
+          <cite>Reggae Pot customer review <!-- VERIFY: name + platform --></cite>
+        </div>
+        <div class="review-card reveal">
+          <p>&ldquo;The quality and quantity of food we received was worth every penny.&rdquo;</p>
+          <cite>Reggae Pot customer review <!-- VERIFY: name + platform --></cite>
+        </div>
+      </div>
+      <div class="catering-note reveal">
+        <p><strong>Planning an event?</strong> From office lunches to Caribbean-themed celebrations, Reggae Pot caters Denver-metro gatherings of every size.</p>
+        <a class="btn btn-outline btn-sm" href="https://catering.reggaepotjamaicangrill.com/">Catering Info ▸</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER ONLINE — live site's own copy block, its own section. Red background,
+       not the dark green used in Prototype A. -->
+  <section class="order-block">
+    <div class="wrap reveal">
+      <span class="eyebrow">Fast &amp; Easy</span>
+      <h2>Order Online</h2>
+      <p>Order your favorites ahead of time right from your phone! Our online ordering is fast and easy. Just a few clicks and you can enjoy Reggae Pot Jamaican Grill to go.</p>
+      <ul class="hero-benefits" style="justify-content:center;">
+        <li>Skip the line</li>
+        <li>No wait</li>
+        <li>More convenient than calling</li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="/order/centennial/">Order Online: Centennial</a>
+        <a class="btn btn-outline-light" href="/order/denver/">Order Online: Denver</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA — solid ink-black band, the opposite end of the palette from the
+       gold hero that opened the page, instead of ending on gold again. -->
+  <section class="final-cta-b">
+    <div class="wrap reveal">
+      <span class="eyebrow">Order ahead</span>
+      <h2>Skip the line. Ready when you get here.</h2>
+      <p class="lede">Order online for pickup or delivery from either location: the same food, the same portions, on your schedule.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="/order/centennial/">Order Online: Centennial</a>
+        <a class="btn btn-outline-light" href="/order/denver/">Order Online: Denver</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-logo">
+        <img class="mark" src="assets/icon.png" alt="" width="186" height="119">
+        <img class="logotype" src="assets/logo-txt.png" alt="Reggae Pot" width="473" height="66">
+      </div>
+      <p style="max-width:32ch; opacity:0.8;">Authentic Jamaican food in south Denver metro. Owned and cooked by Tamara Nisbeth of Montego Bay.</p>
+    </div>
+    <div>
+      <h4>Centennial</h4>
+      <ul>
+        <li>7562 S University Blvd Unit C</li>
+        <li><a href="tel:+13039975623">303-997-5623</a></li>
+        <li><a href="/order/centennial/">Order Online ▸</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Denver</h4>
+      <ul>
+        <li>2243 S Monaco St Pkwy #104</li>
+        <li><a href="tel:+17204102956">720-410-2956</a></li>
+        <li><a href="/order/denver/">Order Online ▸</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>More</h4>
+      <ul>
+        <li><a href="/menu/">Full Menu</a></li>
+        <li><a href="https://catering.reggaepotjamaicangrill.com/">Catering</a></li>
+        <li><a href="#why">About Tamara</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Reggae Pot Jamaican Grill.</span>
+    <span>Redesign prototype B. See README.md in this folder before this ships.</span>
+  </div>
+</footer>
+
+<nav class="mobile-order-bar" aria-label="Quick order">
+  <a class="centennial" href="/order/centennial/">Order: Centennial</a>
+  <a class="denver" href="/order/denver/">Order: Denver</a>
+</nav>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.15});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+
+  var heroVideo = document.querySelector('.hero-media video');
+  if (heroVideo && 'IntersectionObserver' in window) {
+    var vio = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) { heroVideo.play().catch(function(){}); }
+        else { heroVideo.pause(); }
+      });
+    }, {threshold: 0});
+    vio.observe(heroVideo);
+  }
+</script>
+
+</body>
+</html>
