@@ -53,6 +53,27 @@ Cynthia's screenshot showed a big empty box to the right of "The dishes people c
 
 **Verified:** ✅ confirmed via `getBoundingClientRect` at a 1600px-wide viewport — the text block and button group now sit side by side spanning the full 1132px row width (previously both stacked left, leaving ~450px of empty space on the right). Zero console errors. ❓ Could not get a screenshot confirming this visually this round (same recurring Browser-tool flakiness) — the measurement is unambiguous, but take a look yourself.
 
+## Revised September 18, 2026 — applied Brian's standing design requirements
+
+Same audit as Prototype A, against Brian's (CEO) standing requirements for every Magister restaurant redesign:
+1. Visible Home nav link
+2. "Contact" not "Contact Us" — n/a, no Contact link here
+3. No cursive fonts — ✅ already compliant
+4. **Order Online CTA prominent, same button color throughout**
+
+**What was wrong:** the primary button was red almost everywhere, but the header had Centennial as outline and Denver as the solid one (reversed from every other section), and the Order Online + Final CTA sections both used gold instead of red — because their dark/colored backgrounds meant red on top of it looked wrong or invisible.
+
+**Fixed:**
+- Added a **Home** link, first item in the nav.
+- Fixed the header to match the sitewide pattern: Centennial solid red, Denver outline.
+- Final CTA (ink background): button now uses the same red as everywhere else — red always contrasted fine there, it just hadn't been changed back.
+- Order Online: this was the real conflict — its background was solid red, so a red button on top of it would vanish. Rather than give the button a special color just here, the **section's background changed to dark green instead** (a tone not used anywhere else in this prototype, so it still reads as its own distinct section, and doesn't blend into the ink-black Final CTA next to it). The button itself is now the exact same red as every other Order Online button on the site.
+- Removed the now-unused `.btn-gold` CSS rule.
+
+**Flagging, not changing without your say-so:** Brian's CRO notes also flag "No Wait" as an unsupported promise — this prototype's hero and Order Online sections both use that exact phrase, which you explicitly asked for earlier this session. Didn't touch it without checking with you first.
+
+**Verified:** ✅ all 13 primary buttons confirmed resolving to the exact same red via computed styles, Order Online's new background color confirmed, zero console errors.
+
 ## Not done yet
 
 - The menu page (`/menu/`) — Prototype A has one built; this prototype doesn't have its own yet. If this direction gets picked, the menu page would need the same gold/red treatment applied.

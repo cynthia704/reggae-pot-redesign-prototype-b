@@ -61,8 +61,6 @@ section{padding-block:clamp(64px,10vw,112px);}
    the live site's other unused brand hue put to work as the "order now" color. */
 .btn-primary{background:var(--red); color:#fff;}
 .btn-primary:hover{background:var(--red-deep); box-shadow:0 8px 22px -8px rgba(181,13,10,0.55);}
-.btn-gold{background:var(--gold); color:var(--ink);}
-.btn-gold:hover{background:#fff; box-shadow:0 10px 26px -8px rgba(255,191,0,0.6);}
 .btn-outline{background:transparent; border-color:currentColor;}
 .btn-outline:hover{background:rgba(0,0,0,0.05);}
 .btn-outline-light{background:transparent; border-color:rgba(255,255,255,0.7); color:#fff;}
@@ -226,8 +224,15 @@ header.site{
 .catering-note{margin-top:34px; padding:22px 24px; border-radius:var(--radius); background:var(--gold-tint); border:2px solid var(--ink); display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between;}
 .catering-note p{margin:0; max-width:52ch;}
 
-/* ---------- Order Online copy block: red, not dark green ---------- */
-.order-block{background:var(--red); color:#fff; text-align:center;}
+/* ---------- Order Online copy block ---------- */
+/* Was red — but red is also the site's one consistent primary-button color, and a red
+   button on a red background disappears. Rather than break the "same button color
+   everywhere" rule (a standing requirement across all Magister redesigns), this section
+   moved to dark green instead: a tone used nowhere else in this prototype, so it still
+   reads as its own distinct section (and doesn't blend into the ink-black Final CTA
+   right below it), while the standard red button stays exactly the same color it is
+   everywhere else on the site. */
+.order-block{background:var(--green-deep); color:#fff; text-align:center;}
 .order-block .wrap{max-width:760px;}
 .order-block h2{color:#fff;}
 .order-block .eyebrow{color:var(--gold);}
