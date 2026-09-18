@@ -74,6 +74,12 @@ Same audit as Prototype A, against Brian's (CEO) standing requirements for every
 
 **Verified:** ✅ all 13 primary buttons confirmed resolving to the exact same red via computed styles, Order Online's new background color confirmed, zero console errors.
 
+## Revised September 18, 2026 — periods in headings
+
+Same fix as Prototypes A and C: removed the trailing/internal periods from every `<h1>`/`<h2>` (hero, Locations, Why/Tamara, Final CTA) — flagged separately from Brian's 4-point list, as item #1 on Beth's earlier list of AI-design tells.
+
+**Verified:** ✅ zero periods remain in any heading, confirmed via `textContent`, zero console errors.
+
 ## Not done yet
 
 - The menu page (`/menu/`) — Prototype A has one built; this prototype doesn't have its own yet. If this direction gets picked, the menu page would need the same gold/red treatment applied.
